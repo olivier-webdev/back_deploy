@@ -136,6 +136,10 @@ app.post("/addUser", (req, res) => {
   });
 });
 
+app.get("/", (_, res) => {
+  res.send(JSON.stringify("API IS WORKING"));
+});
+
 app.listen(port, () => {
   console.log(`serveur Node écoutant sur le port ${port}`);
 });
